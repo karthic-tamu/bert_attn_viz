@@ -21,12 +21,14 @@ from __future__ import print_function
 import collections
 import csv
 import os
-from bert_attn_viz import modeling, tokenization, optimization
-import bert_attn_viz.classifier_heads as clf
+import modeling
+import tokenization
+import optimization
+import classifier_heads as clf
 import tensorflow as tf
 import random
 
-flags = tf.flags
+flags =  tf.compat.v1.flags
 
 FLAGS = flags.FLAGS
 
